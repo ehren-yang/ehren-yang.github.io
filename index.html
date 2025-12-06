@@ -3,67 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-pop 演唱会资讯站</title>
+    <title>K-pop 演唱会高级售票</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #111;
+            background-color: #000;
             color: #fff;
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: #ff66cc;
-            padding: 20px;
+            background: linear-gradient(90deg, #D4AF37, #A67C00);
+            padding: 25px;
             text-align: center;
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
+            letter-spacing: 2px;
         }
+
         .container {
-            padding: 20px;
+            padding: 25px;
+            max-width: 900px;
+            margin: auto;
         }
-        .concert {
-            background: #222;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
+
+        .concert-card {
+            background-color: #111;
             border: 1px solid #444;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            padding: 20px;
+            box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
         }
-        .title {
-            font-size: 22px;
-            color: #ff99dd;
+
+        .concert-title {
+            font-size: 26px;
+            color: #D4AF37;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .seatmap {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+            border: 1px solid #333;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #D4AF37;
+            padding: 12px 22px;
+            color: #000;
+            font-size: 16px;
+            border-radius: 8px;
+            text-decoration: none;
             font-weight: bold;
         }
-        .info {
-            margin-top: 10px;
-            line-height: 1.6;
+
+        .buy-btn:hover {
+            background-color: #b8922a;
         }
+
     </style>
 </head>
 <body>
 
-<header>K-pop 演唱会资讯站</header>
+<header>K-pop 演唱会・高级售票站</header>
 
 <div class="container">
 
-    <div class="concert">
-        <div class="title">G-DRAGON 首尔安可演唱会</div>
+    <!-- GD 演唱会 -->
+    <div class="concert-card">
+        <div class="concert-title">G-DRAGON 首尔安可演唱会</div>
         <div class="info">
             📍 地点：首尔高尺天空巨蛋<br>
             🕒 时间：2025年12月20日 17:00<br>
             💰 票价：KRW 132,000 – 330,000<br>
-            🔗 联系购买：请加微信 xiaobai-ticket
+            📞 联系购买：微信 xiaobai-ticket
         </div>
+
+        <!-- 座位图 -->
+        <img class="seatmap" src="https://i.imgur.com/0ZQZqzM.jpeg" alt="GD 座位图">
     </div>
 
-    <div class="concert">
-        <div class="title">SEVENTEEN 香港演唱会</div>
+
+    <!-- SEVENTEEN 演唱会 -->
+    <div class="concert-card">
+        <div class="concert-title">SEVENTEEN 香港演唱会</div>
         <div class="info">
             📍 地点：AsiaWorld-Arena<br>
             🕒 时间：2025年12月28日<br>
             💰 票价：HKD 680 – 1880<br>
-            🔗 联系购买：请加微信 xiaobai-ticket
+            📞 联系购买：微信 xiaobai-ticket
         </div>
+
+        <!-- 座位图 -->
+        <img class="seatmap" src="https://i.imgur.com/2RXdz7W.jpeg" alt="SEVENTEEN 香港座位图">
     </div>
 
 </div>
